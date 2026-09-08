@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title{Wigner Resolution from Action Capacity}
+\title{Elliptical Quanta Circumscribed by Classical Action Fix the Wigner Resolution}
 
 \author{Brian S. Mulloy\orcidlink{0000-0002-1803-3172}}
 \affiliation{Independent Researcher, Corktown, Detroit, Michigan, USA}
@@ -31,7 +31,7 @@
 \date{\today}
 
 \begin{abstract}
-The Wigner function represents a quantum state in phase space. Smoothing it gives a non-negative portrait, with the smoothing scale conventionally set from outside the state. We show that the resolution is set by the state. The state's action capacity $\pi\,\Delta x\,\Delta p$ fixes a family of de Gosson quantum blobs deforming at constant action $h/2$. Convolving the Wigner function with the kernel of a single $h/2$ blob renders it non-negative for a specific choice of coordinates. Integrating over the family is coordinate-free and resolves the portrait at $\pi\hbar^2/(\Delta x\,\Delta p)$, the symplectic polar dual of the capacity. The portrait is everywhere non-negative and holds the structure of the Wigner function in place. Wigner resolution derives from the state's action capacity alone and sharpens as that capacity grows.
+The Wigner function represents a quantum state in phase space. Smoothing it gives a non-negative portrait, with the smoothing scale conventionally set from outside the state. We show that the state sets the scale. The classical action Zurek used to locate sub-Planck structure is the area of the state's covariance ellipse $\pi\,\Delta x\,\Delta p$. It circumscribes a family of elliptical quanta, de Gosson's quantum blobs deforming at constant action $h/2$, one per quadrature angle. Convolving the Wigner function with the kernel of a single quantum renders it non-negative for one choice of coordinates. Integrating over the family is coordinate-free and resolves the portrait at $\pi\hbar^2/(\Delta x\,\Delta p)$, the polar dual of the classical action. The portrait is everywhere non-negative and preserves the structure of the Wigner function. Wigner resolution derives from the state's classical action alone and sharpens as the state grows.
 \end{abstract}
 
 \keywords{Phase space formulation of quantum mechanics, Wigner functions, Uncertainty principle, Symplectic geometry, Schrödinger cat states}
@@ -49,21 +49,21 @@ The Wigner function represents a quantum state in phase space~\cite{wigner1932,h
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/principal_blobs.pdf}
-\caption{\textbf{Capacity, quantum blobs at principal axes, and resolution.} The state's covariance ellipsoid has action capacity $A = \pi \, \Delta x \, \Delta p \ge h/2$. The quantum blob family (Fig.~\ref{fig:quantum_blobs}) has two members at the principal axes, $\beta_{\theta=0} = \pi \, \Delta x \, \delta p = h/2$ and $\beta_{\pi/2} = \pi \,\delta x \,\Delta p = h/2$. The resolution $a$ is an ellipse with semi-axes $\delta x, \delta p$ and action $a = \pi \, \delta x \, \delta p = \pi\hbar^2/(\Delta x\,\Delta p)$. $A$ circumscribes $\beta_{\theta=0}$ and $\beta_{\pi/2}$, which circumscribe $a$.}
+\caption{\textbf{Capacity, elliptical quanta at principal axes, and resolution.} The state's covariance ellipsoid has action capacity $A = \pi \, \Delta x \, \Delta p \ge h/2$. The elliptical quanta family (Fig.~\ref{fig:quantum_blobs}) has two members at the principal axes, $\beta_{\theta=0} = \pi \, \Delta x \, \delta p = h/2$ and $\beta_{\pi/2} = \pi \,\delta x \,\Delta p = h/2$. The resolution $a$ is an ellipse with semi-axes $\delta x, \delta p$ and action $a = \pi \, \delta x \, \delta p = \pi\hbar^2/(\Delta x\,\Delta p)$. $A$ circumscribes $\beta_{\theta=0}$ and $\beta_{\pi/2}$, which circumscribe $a$.}
 \label{fig:principal_blobs}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/quantum_blobs.pdf}
-\caption{\textbf{Capacity, quantum blob family, and resolution.} Action capacity $A$ circumscribes the quantum blob family $\{\beta_\theta\}$, which circumscribes resolution $a$. Across $\theta$ the blob family deforms at constant action $\beta_\theta = h/2$. At the principal angles $\theta = 0$ and $\theta = \pi/2$, the family recovers $\beta_{\theta=0}$ and $\beta_{\pi/2}$ from Fig.~\ref{fig:principal_blobs}.}
+\caption{\textbf{Capacity, elliptical quanta family, and resolution.} Action capacity $A$ circumscribes the elliptical quanta family $\{\beta_\theta\}$, which circumscribes resolution $a$. Across $\theta$ the blob family deforms at constant action $\beta_\theta = h/2$. At the principal angles $\theta = 0$ and $\theta = \pi/2$, the family recovers $\beta_{\theta=0}$ and $\beta_{\pi/2}$ from Fig.~\ref{fig:principal_blobs}.}
 \label{fig:quantum_blobs}
 \end{figure}
 
 \begin{figure*}[!tp]
 \centering
 \includegraphics[width=\textwidth]{figures/harmonic.pdf}
-\caption{\textbf{Harmonic oscillator.} Rows correspond to Fock states $n = 0, 1, 2, 20$ with action capacity $A/(h/2) = 2n+1$. Column 1: Wigner function $W(x, p)$ (negativity in blue) overlaid with the capacity $A$ and resolution $a$. Centered at the covariance origin, $a$ marks the resolution of the finest structure (the Zurek scale) of the bare, unconvolved Wigner function. Column 2: Cross-section $W(x, 0)$ exhibiting negative dips. Column 3: Quantum kernel $K_{\pi/2}$ overlaid with $A$ and the quantum blob $\beta_{\pi/2}$ (action $h/2$, restoring Planck's quantum of action). Column 4: Convolved cross-section $\widetilde W_{\pi/2}(x, 0)$ at quadrature angle $\theta = \pi/2$, which is non-negative. Column 5: The portrait $\widetilde W(x, p)$, integrated over the blob family across all $\theta$, overlaid with $A$ and $a$ (symplectic polar duals). It is everywhere non-negative, with positive lobes at the positions of those in $W$, resolved at $a$. For the vacuum ($n = 0$), $A$ and $a$ coincide as a Gaussian blob at $A = h/2$. As $n$ increases, $A$ grows and $a$ reciprocally shrinks ($a\,A = (h/2)^2$). At $n = 20$, the rings condense toward a classical energy trajectory, leaving $a$ as a fine central ellipse. Axes are in the oscillator scales $x_0 = \sqrt{\hbar/m\omega}$ and $p_0 = \sqrt{\hbar m\omega}$.}
+\caption{\textbf{Harmonic oscillator.} Rows correspond to Fock states $n = 0, 1, 2, 20$ with action capacity $A/(h/2) = 2n+1$. Column 1: Wigner function $W(x, p)$ (negativity in blue) overlaid with the capacity $A$ and resolution $a$. Centered at the covariance origin, $a$ marks the resolution of the finest structure (the Zurek scale) of the bare, unconvolved Wigner function. Column 2: Cross-section $W(x, 0)$ exhibiting negative dips. Column 3: Quantum kernel $K_{\pi/2}$ overlaid with $A$ and the elliptical quantum $\beta_{\pi/2}$ (action $h/2$, restoring Planck's quantum of action). Column 4: Convolved cross-section $\widetilde W_{\pi/2}(x, 0)$ at quadrature angle $\theta = \pi/2$, which is non-negative. Column 5: The portrait $\widetilde W(x, p)$, integrated over the blob family across all $\theta$, overlaid with $A$ and $a$ (symplectic polar duals). It is everywhere non-negative, with positive lobes at the positions of those in $W$, resolved at $a$. For the vacuum ($n = 0$), $A$ and $a$ coincide as a Gaussian blob at $A = h/2$. As $n$ increases, $A$ grows and $a$ reciprocally shrinks ($a\,A = (h/2)^2$). At $n = 20$, the rings condense toward a classical energy trajectory, leaving $a$ as a fine central ellipse. Axes are in the oscillator scales $x_0 = \sqrt{\hbar/m\omega}$ and $p_0 = \sqrt{\hbar m\omega}$.}
 \label{fig:harmonic}
 \end{figure*}
 
@@ -93,7 +93,7 @@ A = \pi\,\Delta x\,\Delta p \ge h/2.
 % ===============================================================================
 %  ZUREK SCALES AS A FAMILY OF DE GOSSON BLOBS
 % ===============================================================================
-The Wigner function carries structure at small scales. Zurek located those scales, $\delta p \sim \hbar/\Delta x$ and $\delta x \sim \hbar/\Delta p$, from the state's action capacity~\cite{zurek2001}. We identify them as the principal axes of a family of de Gosson quantum blobs~\cite{degosson2013qblobs} (Fig.~\ref{fig:principal_blobs}),
+The Wigner function carries structure at small scales. Zurek located those scales, $\delta p \sim \hbar/\Delta x$ and $\delta x \sim \hbar/\Delta p$, from the state's action capacity~\cite{zurek2001}. We identify them as the principal axes of a family of elliptical quanta, de Gosson quantum blobs~\cite{degosson2013qblobs} (Fig.~\ref{fig:principal_blobs}),
 \begin{equation}
 \beta_{\theta=0} = \pi\,\Delta x\,\delta p = h/2, \qquad \beta_{\pi/2} = \pi\,\delta x\,\Delta p = h/2.
 \label{eq:principal_axis_blobs}
@@ -115,7 +115,7 @@ The Wigner function of the state is
 W(x,p) = \frac{1}{\pi\hbar}\int \psi^*(x+s)\,\psi(x-s)\,e^{2ips/\hbar}\,ds.
 \label{eq:wigner}
 \end{equation}
-The quantum kernel $K_\theta$ is a pure-state Wigner function, the centered Gaussian whose $h/2$ ellipse is the quantum blob $\beta_\theta$,
+The quantum kernel $K_\theta$ is a pure-state Wigner function, the centered Gaussian whose $h/2$ ellipse is the elliptical quantum $\beta_\theta$,
 \begin{equation}
 K_\theta(x, p) = \frac{1}{\pi\hbar}\exp\!\left[ -X_\theta^{2} - \tfrac{A^2}{(\pi\hbar)^2}\, P_\theta^{2} \right].
 \label{eq:Ktheta}
@@ -164,7 +164,7 @@ with equality at the origin. The bound cuts off at $\delta x$ and $\delta p$, so
 % ===============================================================================
 %  UNIQUENESS OF BLOBS TO STATE
 % ===============================================================================
-A quantum blob $\beta_\theta$ too large for $A$ to circumscribe, or too
+An elliptical quantum $\beta_\theta$ too large for $A$ to circumscribe, or too
 small to circumscribe $a$, is a blob of another state and
 portrays that state, not this one~\cite{degosson2013qblobs,
 degosson2022polar}. Every $h/2$ blob of this state is inscribed in $A$
@@ -192,7 +192,7 @@ Figures~\ref{fig:harmonic},~\ref{fig:cat}, and~\ref{fig:eigen} show numerical re
 % ===============================================================================
 %  DISCUSSION
 % ===============================================================================
-The uncertainty product $\sigma_x \sigma_p$ grows unbounded, the micro-to-macro transition Heisenberg~\cite{heisenberg1927} and Bohr~\cite{bohr1928} identified as requiring care. The quantum blob does not. As $A$ grows, the family $\{\beta_\theta\}$ deforms at fixed action $h/2$. Squeezing deforms a state by external apparatus~\cite{walls1983}. Here the scale called sub-Planck~\cite{zurek2001} is the minor axis $\delta$ of an $h/2$ blob, narrowing as the conjugate capacity $\Delta$ grows. A Schr\"odinger cat with capacity $\Delta p \sim 1$ kg$\cdot$m/s has resolution $\delta x = \hbar/\Delta p \sim 10^{-34}$ m, nineteen orders sub-nuclear~\cite{schrodinger1935trimmer}. The correspondence principle follows from $A \to \infty$ and $a \to 0$, the physical limit underlying the heuristic $h \to 0$. The resolution sharpens as the action capacity grows, $a = (h/2)^2 \,/ \,A$. We read this structure as the geometry of phase space itself, which de Gosson finds underlying the uncertainty principle~\cite{degossonluef2009irruption}.
+The uncertainty product $\sigma_x \sigma_p$ grows unbounded, the micro-to-macro transition Heisenberg~\cite{heisenberg1927} and Bohr~\cite{bohr1928} identified as requiring care. The elliptical quantum does not. As $A$ grows, the family $\{\beta_\theta\}$ deforms at fixed action $h/2$. Squeezing deforms a state by external apparatus~\cite{walls1983}. Here the scale called sub-Planck~\cite{zurek2001} is the minor axis $\delta$ of an $h/2$ blob, narrowing as the conjugate capacity $\Delta$ grows. A Schr\"odinger cat with capacity $\Delta p \sim 1$ kg$\cdot$m/s has resolution $\delta x = \hbar/\Delta p \sim 10^{-34}$ m, nineteen orders sub-nuclear~\cite{schrodinger1935trimmer}. The correspondence principle follows from $A \to \infty$ and $a \to 0$, the physical limit underlying the heuristic $h \to 0$. The resolution sharpens as the action capacity grows, $a = (h/2)^2 \,/ \,A$. We read this structure as the geometry of phase space itself, which de Gosson finds underlying the uncertainty principle~\cite{degossonluef2009irruption}.
 
 % ===============================================================================
 %  ACKNOWLEDGEMENTS
